@@ -21,7 +21,7 @@
     "es-check": "es-check es5 './dist/_nuxt/*[!.modern].js'",
     "postinstall-disable": "electron-builder install-app-deps",
     "electron:build": "npm run production && npm run electron:build-x64 && npm run electron:build-x86",
-    "electron:build-x64": "electron-builder -mwl --config=./desktop/electron-builder.config.js",
+    "electron:build-x64": "electron-builder -m --config=./desktop/electron-builder.config.js",
     "electron:build-x86": "electron-builder -w --ia32  --config=./desktop/electron-builder-x86.config.js",
     "electron:build-dir": "electron-builder --config=./desktop/electron-builder.config.js --dir",
     "electron:dev": "electron ./desktop/electron.dev.js",
